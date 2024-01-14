@@ -10,7 +10,7 @@ const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const session = require('express-session');
 
 passport.use(new GoogleStrategy({
-  clientID: '9754491gfdgfdg5fdalmg9111fe3ahrbu.apps.googleusercontent.com'
+  clientID: '9754491gfdgfdg5fdalmg9111fe3ahrbu.apps.googleusercontent.com',
   clientSecret: 'OfHsdfsdfgMZTLtlIMoe0',
   callbackURL: 'http://localhost:8000/auth/google/callback'
 }, (accessToken, refreshToken, profile, done) => {
